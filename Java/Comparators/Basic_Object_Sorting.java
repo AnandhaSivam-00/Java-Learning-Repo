@@ -82,3 +82,7 @@ public class Basic_Object_Sorting {
     }
   }
 }
+
+
+
+// Note that Compartors are only work on the class type not primitiive types.

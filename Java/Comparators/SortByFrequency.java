@@ -4,28 +4,23 @@ public class SortByFrequency {
 
   protected static String comparatorMethod(List<String> str) {
     Map<String, Integer> freqMap = new HashMap<>();
-    StringBuilder resultStr = new StringBuilder();
+    StringBuilder sb = new StringBuilder();
 
     for(int i=0; i<str.size(); i++) {
       freqMap.put(str.get(i), freqMap.getOrDefault(str.get(i), 0) + 1);
     }
 
-    Collections.sort(str, new Comparator<String>() {
-      @Override
-      public int compare(String o1, String o2) {
-        // Below two works only continous elements like 1 1 1 2 2 3 3 
-        //return freqMap.get(o1).compareTo(freqMap.get(o2));
-        // return freqMap.get(o1) - freqMap.get(o2);
+    List<Map.Entry<String, Integer>> freqList = new ArrayList<>(freqMap.entrySet());
 
-        return freqMap.get(o2).compareTo(freqMap.get(o1));
+    Collectors.sort(freqList, (obj1, obj2) -> obj1.getValue() == obj2.getValue() ? obj2.getKey() - obj1.getKey() : obj1.getValue() - obj2.getValue());
+
+    for(Map.Entry<String, Integer> entry : freqList) {
+      for(int i=0; i<entry.getValue(); i++) {
+        sb.append(entry.getKey()).append(" ");
       }
-    });
-
-    for(int i=0; i<str.size(); i++) {
-      resultStr.append(str.get(i) + " ");
     }
 
-    return resultStr.toString().trim();
+    return sb.toString();
   }
   
   public static void main(String args[]) {
