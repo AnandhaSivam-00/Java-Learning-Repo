@@ -86,3 +86,13 @@ public class Basic_Object_Sorting {
 
 
 // Note that Compartors are only work on the class type not primitiive types.
+
+
+Collections.sort(keys, new Comparator<Integer>() {
+    @Override
+    public int compare(Integer obj1, Integer obj2) {
+        if(obj1 - obj2 != 0) {
+            return obj1 - obj2;
+        }
+    }
+});
