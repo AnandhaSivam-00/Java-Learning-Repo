@@ -4,13 +4,13 @@ public class MergeSortingTechnique {
 
   protected static void merge(int arr[], int low, int mid, int high) {
     // Intitializing the left and right array sizes.
-    int leftSize = mid - low + 1;
-    int rightSize = high - mid;
+    int leftSize = mid - low + 1; // need attention
+    int rightSize = high - mid; // need attention
 
     // Creating the left and right array.
     int left[] = new int[leftSize];
     int right[] = new int[rightSize];
-    int i, j, k = low;
+    int i, j, k = low; // need attention
 
     // Copying the elements of the left array.
     for(i=0; i<leftSize; i++) {
@@ -56,7 +56,7 @@ public class MergeSortingTechnique {
       if(i < leftSize) {
         arr[k] = left[i];
         i++;
-        k++;
+        k++; // need attention
       }
       else if(j < rightSize) {
         arr[k] = right[j];
