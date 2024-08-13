@@ -1,4 +1,4 @@
-// John wants to learn alphabet ordering. He was given a task of ordering the alphabets within a word in a given string and also arrange words based on its maximum to minimum length. If more than one word have same length, then arrange words based on first letter in alphabetical order. If any of the word contains other than character, then place at end of the word. Write a program to help john to order it.
+q// John wants to learn alphabet ordering. He was given a task of ordering the alphabets within a word in a given string and also arrange words based on its maximum to minimum length. If more than one word have same length, then arrange words based on first letter in alphabetical order. If any of the word contains other than character, then place at end of the word. Write a program to help john to order it.
 
 // Note: Assume the minimum word size is two, each word contains at least one character.
 
