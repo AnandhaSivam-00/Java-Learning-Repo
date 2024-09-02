@@ -1,36 +1,48 @@
-class Solution {
-    protected static void swapping(int[][] matrix, int row, int col) {
-        matrix[row][col] = matrix[row][col] + matrix[col][row];
-        matrix[col][row] = matrix[row][col] - matrix[col][row];
-        matrix[row][col] = matrix[row][col] - matrix[col][row];
+import java.util.*;
+
+public class RotateArray90 {
+    protected static void swap(int matrix[][], int i, int j) {
+        int temp = matrix[i][j];
+        matrix[i][j] = matrix[j][i];
+        matrix[j][i] = temp;
     }
-
-    public void rotate(int[][] matrix) {
-        // To Transpose the matrix
-
-        int row, col, col1, col2;
-
-        for (row = 0; row < matrix.length; row++) {
-            for (col = row; col < matrix.length; col++) {
-                if (col != row) {
-                    swapping(matrix, row, col);
+    
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt(), row, col;
+        int matrix[][] = new int[n][n];
+        
+        for(row=0; row<n; row++) {
+            for(col=0; col<n; col++) {
+                matrix[row][col] = sc.nextInt();
+            }
+        }
+        
+        // Transpose the matrix
+        for(row=0; row<n; row++) {
+            for(col=row; col<n; col++) {
+                if(row != col) {
+                    swap(matrix, row, col);
                 }
             }
         }
-
-        // To reverse the row
-
-        for (row = 0; row < matrix.length; row++) {
-            col1 = 0;
-            col2 = matrix.length-1;
-
-            while (col1 < col2) {
-                matrix[row][col1] = matrix[row][col1] + matrix[row][col2];
-                matrix[row][col2] = matrix[row][col1] - matrix[row][col2];
-                matrix[row][col1] = matrix[row][col1] - matrix[row][col2];
-                col1++;
-                col2--;
+        
+        // Reverse the columns of the matrix
+        for(row=0; row<n; row++) {
+            for(col=0; col<n/2; col++) {
+                int temp = matrix[row][col];
+                matrix[row][col] = matrix[row][n-col-1];
+                matrix[row][n-col-1] = temp;
             }
+        }
+        
+        for(row=0; row<n; row++) {
+            for(col=0; col<n; col++) {
+                System.out.print(matrix[row][col] + " ");
+            }
+            System.out.println();
         }
     }
 }
+
