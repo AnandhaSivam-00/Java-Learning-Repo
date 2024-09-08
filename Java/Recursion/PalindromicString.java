@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class PalindromicString {
   protected static boolean isPalindrome(String str) {
     if(str.length() == 0 || str.length() == 1) {

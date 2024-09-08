@@ -12,22 +12,13 @@
 import java.util.*;
 
 public class PeekElementInMatrix {
-  int result[] = new int[2];
-  int max = Integer.MIN_VALUE;
-  
-  protected static findingMax(int arr[][], int row, int col) {
-    if(max < arr[row][col]) {
-      max = arr[row][col];
-      result[0] = row;
-      result[1] = col;
-    }
-  }
-  
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
-    int n = sc.nextInt(), m = sc.nextInt(), row = 0, col = 0, max = Integer.MIN_VALUE;
+    int n = sc.nextInt(), m = sc.nextInt(), row = 0, col = 0;
+    
     int arr[][] = new int[n][m];
+    int result[] = new int[2];
 
     for(row=0; row<n; row++) {
       for(col=0; col<m; col++) {
@@ -36,47 +27,57 @@ public class PeekElementInMatrix {
     }
 
     for(row=0; row<n; row++) {
-      for(col=0; col<m && col+1<m; col++) {
-        if(
-          (row == 0 && col == 0) && 
-          (arr[row][col] >= arr[row][col+1] && arr[row][col] >= arr[row+1][col])
-        ) {
-          findingMax(arr, row, col);
+      for(col=0; col<m; col++) {
+        if(col-1 >= 0 && arr[row][col] < arr[row][col-1]) {
+          continue;
         }
-        else if(
-          (row == 0 && col == m-1) &&
-          (arr[row][col] >= arr[row][col-1] && arr[row][col] >= arr[row+1][col])
-        ) {
-          findingMax(arr, row, col);
+        if(col+1 < m && arr[row][col] < arr[row][col+1]) {
+          continue;
         }
-        else if(
-          (row == n-1 && col == 0) &&
-          (arr[row][col] >= arr[row][col+1] && arr[row][col] >= arr[row-1][col])
-        ){
-          findingMax(arr, row, col);
+        if(row-1 >= 0 && arr[row][col] < arr[row-1][col]) {
+          continue;
         }
-        else if(
-          (row == n-1 && col == m-1) &&
-          (arr[row][col] >= arr[row][col-1] && arr[row][col] >= arr[row-1][col])
-        ) {
-          findingMax(arr, row, col);
+        if(row+1 < n && arr[row][col] < arr[row+1][col]) {
+          continue;
         }
-        else if(
-          (row == 0 && col != 0 && col != m-1) &&
-          (arr[row][col] >= arr[row][col-1] && arr[row][col] >= arr[row][col+1] && arr[row][col] >= arr[row+1][col])
-        )
+        result[0] = row;
+        result[1] = col;
       }
-    }
-
-    if(max < arr[0][0]) {
-      result[0] = 0;
-      result[1] = 0;
-    }
-    else if(max < arr[n-1][m-1]) {
-      result[0] = n-1;
-      result[1] = m-1;
     }
 
     System.out.println(result[0] + ", " + result[1]);
   }
 }
+
+
+
+// Leetcode
+
+// class Solution {
+//     public int[] findPeakGrid(int[][] mat) {
+//     int row = 0, col = 0, m = mat[0].length, n = mat.length;
+
+//     int result[] = new int[2];
+
+//     for(row=0; row<n; row++) {
+//       for(col=0; col<m; col++) {
+//         if(col-1 >= 0 && mat[row][col] < mat[row][col-1]) {
+//           continue;
+//         }
+//         if(col+1 < m && mat[row][col] < mat[row][col+1]) {
+//           continue;
+//         }
+//         if(row-1 >= 0 && mat[row][col] < mat[row-1][col]) {
+//           continue;
+//         }
+//         if(row+1 < n && mat[row][col] < mat[row+1][col]) {
+//           continue;
+//         }
+//         result[0] = row;
+//         result[1] = col;
+//       }
+//     }
+
+//     return result;
+//     }
+// }
