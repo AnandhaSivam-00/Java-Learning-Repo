@@ -12,7 +12,7 @@ public class LocaldateClass {
     LocalDate ld = LocalDate.now();
     System.out.println("Today: " + ld);
 
-    System.out.println("Current day:" + ld.getDayOfWeek());
+    System.out.println("Current day: " + ld.getDayOfWeek());
     System.out.println("Current Month: " + ld.getMonth() + " " + ld.getDayOfMonth());
     System.out.println("Current Year : " + ld.getYear());
     System.out.println(ld.isLeapYear());

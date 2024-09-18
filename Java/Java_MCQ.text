@@ -1,0 +1,417 @@
+1. Hash tree is used in effective data verification in distributed systems
+
+2. In the given graph identify the cut vertices.
+
+3. Binary tree sort is an in-place sorting algorithm
+
+Options
+False
+True
+
+4. Which of the following tree data structures is not a balanced binary tree?
+
+Options
+Red-Black Tree
+AVL Tree
+B-Tree
+Splay Tree --
+
+5. Insertion sort is an example of an incremental algorithm.
+
+Options
+True --
+False
+
+6. Shell sort algorithm is an example of?
+
+Options
+Bottom-up sorting
+In-place sorting
+Internal sorting --
+External sorting
+
+7. Which of the following sorting algorithms is the slower?
+
+Options
+Merge Sort
+Shell Sort
+Insertion Sort
+Bubble Sort --
+None of These
+
+8. Which data structure is based on the Last In First Out (LIFO) principle?
+
+Options
+Queue
+Stack --
+Linked List
+Tree
+
+9. Sequential access in a Hash tree is faster than in B-trees.
+
+Options
+True --
+False
+
+10. Hash tree is generalization of ______
+
+Options
+Heap
+Hash List --
+BST
+B-Tree
+
+11. Which data structure is needed to convert infix notation to postfix notation?
+
+Options
+Stack --
+Branch
+Queue
+Tree
+
+12.  Which of the following sorting algorithms is the fastest for sorting small arrays?
+
+Options
+Shell Sort
+Quick Sort
+Insertion Sort --
+Heap Sort
+
+13. Which data structure is used for implementing recursion?
+
+Options
+Stack --
+Queue
+List
+Array
+
+14. In binary tree sort, we first construct the BST and then we perform _______ traversal to get the sorted order.
+
+Options
+preorder
+postorder
+level order
+inorder --
+
+15. Which of the following sorting algorithm uses recursion?
+
+Options
+heap sort
+merge sort --
+quick sort --
+bottom up merge sort
+
+16. The given Graph is regular.
+In a regular graph degrees of all the vertices are equal
+
+Options
+False
+True
+
+17. Which of the following is good for sorting arrays having less than 100 elements?
+
+Options
+Merge Sort --
+Selection Sort
+Insertion Sort
+Quick Sort
+
+18. Which of the following sorting algorithm is stable?
+
+Options
+Introsort
+Merge Sort --
+Heap Sort
+Quick Sort
+None of These
+
+19. Which of the following sorting algorithms can be considered as improvement to the binary tree sort?
+
+Options
+Insertion sort
+Selection Sort
+Quick Sort
+Heap Sort --
+
+20. The prefix form of A-B/ (C * D ^ E) is?
+
+Options
+-A/BC*^DE
+-ABCD*^DE
+-A/B*C^DE --
+-/*^ACBDE
+
+21. Which data structure is needed to convert infix notation to postfix notation?
+
+Options
+Tree
+Branch
+Queue
+None of These --
+
+22. The postfix form of A*B+C/D is?  
+
+Options
+*AB/CD+
+AB*CD/+ --
+A*BC+/D
+ABCD+/*
+
+23. The data structure required to check whether an expression contains a balanced parenthesis is?
+
+Options
+Array
+Queue
+Tree
+Stack --
+
+24. Identify The Data Structure Concept for the DFS?
+
+Options
+Priority Queue
+Push and Pop
+Stack --
+LIFO
+
+25. Given an empty AVL tree, how would you construct AVL tree when a set of numbers are given without performing any rotations?  
+
+Options
+just build the tree with the given input
+find the median of the set of elements given, make it as root and construct the tree --
+use trial and error
+) use dynamic programming to build the tree
+
+26. Which of the following ways can be used to represent a graph?  
+
+Options
+Incidence Matrix
+Adjacency List, Adjacency Matrix as well as Incidence Matrix --
+Adjacency List and Adjacency Matrix
+No way to represent
+
+27. Which is a synchronized Thread Safe in Data Structure in Hash Concepts?
+
+Options
+Hash Table --
+Hash Map
+All the Above
+Hash
+
+28. A queue follows __________  
+
+Options
+LIFO
+Ordered Array
+FIFO --
+Linear Tree
+
+29. Which of the following is false?
+
+Options
+) B+ -tree is shallower than B-tree
+In a B+ -tree, the sibling pointers allow sequential searching
+A B+ -tree is balanced
+A B+ -tree grows downwards --
+
+30. he process of accessing data stored in a serial access memory is similar to manipulating data on a ________
+
+Options
+Heap
+Stack --
+Array
+All of These
+
+31. Find the BFS 
+
+Breadth First Search (BFS): Level Order Traversal - Tutorial
+
+Options
+none of these
+12534
+12345
+23451
+
+32. For which of the following combinations of the degrees of vertices would the connected graph be eulerian?
+
+Options
+1 3 5
+2 4 5
+2 3 4
+1 2 3 --
+
+33. Is It Possible to find a topological sorting for a Acyclic Graph?
+
+Options
+True --
+False
+
+34. Consider an implementation of unsorted singly linked list. Suppose it has its representation with a head pointer only. Given the representation, which of the following operation can be implemented in O(1) time?
+
+i) Insertion at the front of the linked list
+
+ii) Insertion at the end of the linked list
+
+iii) Deletion of the front node of the linked list
+
+iv) Deletion of the last node of the linked list
+
+Options
+I and III --
+I and II
+I, II and III
+I, II and IV
+
+35. What type of Data Structure concept is used in BFS?
+
+Options
+List
+Array
+Stack
+Queue --
+
+36. Can a tree stored in an array using either one of inorder or post order or pre order traversals be again reformed?
+
+Options
+Yes just traverse through the array and form the tree
+No we need one more traversal to form a tree
+No in case of sparse trees
+Yes by using both inorder and array elements
+
+37. Process of inserting an element in stack is called ____________  
+
+Options
+None Of these --
+Pop
+Create
+Evaluation
+
+38. What is/are the disadvantages of implementing tree using normal arrays?
+
+Options
+difficult in finding the parent of a node
+have to know the maximum number of nodes possible before creation of trees --
+difficulty in knowing children nodes of a node
+difficult to implement
+
+
+39.  If a simple graph G, contains n vertices and m edges, the number of edges in the Graph G'(Complement of G) is ________
+
+Options
+(n*n-n-2*m)/2
+(n*n+n+2*m)/2
+(n*n-n-2*m)/2 --
+(n*n-n+2*m)/2
+
+40. For a given graph G having v vertices and e edges which is connected and has no cycles, which of the following statements is true?  
+
+Options
+v + 1 = e
+v = e+1 --
+v = e-1
+v=e
+
+41. Here is an infix expression: 4 + 3*(6*3-12). Suppose that we are using the usual stack algorithm to convert the expression from infix to postfix notation. The maximum number of symbols that will appear on the stack AT ONE TIME during the conversion of this expression?  
+
+Options
+1
+2
+3
+4 --
+
+42. The postfix form of the expression (A+ B)*(C*D- E)*F / G is?
+
+Options
+AB + CD* E – *F *G /
+AB + CD* E – F **G /
+AB + CDE * – * F *G /
+AB+ CD*E – FG /** --
+
+43. Which of the following Allow only one Null Key?
+
+Options
+Hash Table
+Hash map --
+Map
+None of These
+
+44. If there is a circular Network is Connected into a Multiple PC's Through wire uses PC's as node and a network wire as a edges
+
+Options
+Graph
+Acyclic Graph
+Cyclic graph --
+None of these
+
+45. Heap memory follows which order 
+
+Options
+lifo
+fifo
+No order --
+none of these
+
+46. A B-tree of order 4 and of height 3 will have a maximum of _______ keys
+
+[ n = (m^{h+1} - 1) ]
+Options
+255 --
+63
+127
+188
+
+
+47. Consider the following definition in c programming language.
+
+struct node
+
+{
+
+int data;
+
+struct node * next;
+
+}
+
+typedef struct node NODE;
+
+NODE *ptr;
+
+
+
+Which of the following c code is used to create new node?
+
+Options
+ptr = (NODE*)malloc(sizeof(NODE)); --
+ptr = (NODE)malloc(sizeof(NODE));
+ptr = (NODE*)malloc(sizeof(NODE*));
+ptr = (NODE*)malloc(NODE);
+
+48. Which data structure is used for implementing recursion?
+
+Options
+Stack --
+Array
+Queue
+List
+
+49. What would be the asymptotic time complexity to find an element in the linked list?
+
+Options
+O(1)
+O(n2)
+O(n) --
+None of These
+
+50. A graph with all vertices having equal degree is known as a __________  
+
+Options
+Simple graph
+Complete graph
+Regular graph --
+Multi graph
+
+
+
+
+
+
