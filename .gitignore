@@ -1,0 +1,15 @@
+.github
+.vscode
+commit-command.sh
+history_log.txt
+pom.xml
+install-extensions.sh
+Extensions
+env.json
+target/
+h2/
+testCases_log.txt
+restructure_tmp/
+restructured_labs/
+.revature/tmp
+.idea/
