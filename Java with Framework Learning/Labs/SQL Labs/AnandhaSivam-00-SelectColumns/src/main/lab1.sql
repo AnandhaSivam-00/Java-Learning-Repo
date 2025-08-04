@@ -1,0 +1,22 @@
+-- In order to retrieve records stored in a table, we may use a select statement.
+-- For instance, the SQL statement could return a result set of all records in Animal:
+--      select * from Animal
+-- The `*` symbol represents 'all columns' of the table.
+-- The result set might look like the following:
+-- | species  | name   | age |
+-- | -------- | ------ | --- |
+-- | fido     | dog    | 4   |
+-- | milo     | cat    | 3   |
+-- | whiskers | gerbil | 1   |
+-- Let's say that we have a table named 'Person'. We'll be expecting all of the
+--  records of the Person table, such as
+-- | id | firstname | lastname  |
+-- | 0  | john      | lennon    |
+-- | 1  | ringo     | star      |
+-- | 2  | paul      | mccartney |
+-- | 3  | george    | harrisson |
+-- | 4  | ted       | balashov  |
+-- TODO: Write a select statement below the commented lines that retrieves all
+--  records from the Person table.
+
+SELECT * FROM Person;
