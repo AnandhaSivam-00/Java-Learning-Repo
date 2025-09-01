@@ -12,7 +12,7 @@ SEARCH_DIR="."
 echo "This script will permanently delete the following items from the current directory and all subdirectories:"
 echo
 echo "Directories: .git, .vscode"
-echo "Files      : .gitignore, commit-command.sh, env.json, history_log.txt, install-extensions.sh, pom.xml"
+echo "Files      : .gitignore, commit-command.sh, env.json, history_log.txt, install-extensions.sh"
 echo
 echo "‼️  WARNING: This action cannot be undone. ‼️"
 echo
@@ -38,8 +38,7 @@ find "$SEARCH_DIR" -type f \( \
   -name "commit-command.sh" -o \
   -name "env.json" -o \
   -name "history_log.txt" -o \
-  -name "install-extensions.sh" -o \
-  -name "pom.xml" \
+  -name "install-extensions.sh" \
 \) -exec rm -f {} +
 
 echo

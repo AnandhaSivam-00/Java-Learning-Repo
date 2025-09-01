@@ -1,9 +1,10 @@
 .github
 .vscode
 commit-command.sh
-history_log.txt
-pom.xml
 install-extensions.sh
+cleanup.sh
+history_log.txt
+application.properties
 Extensions
 env.json
 target/
@@ -13,3 +14,4 @@ restructure_tmp/
 restructured_labs/
 .revature/tmp
 .idea/
+lib/
