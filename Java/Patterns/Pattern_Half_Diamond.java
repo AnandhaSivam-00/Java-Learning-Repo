@@ -4,19 +4,32 @@ class Pattern_Half_Diamond {
     Scanner sc = new Scanner(System.in);
     int size = sc.nextInt();
 
-      for(int row=1;row<=size;row++){
-        for(int space=1;space<=size-row;space++)
-            System.out.print(" ");
-        for(int col=1;col<=row;col++)
-            System.out.print("* ");
-        System.out.println();
+    // Single outer loop for both upper and lower parts
+    for(int row = 1; row <= 2 * size - 1; row++) {
+      int stars, spaces;
+      
+      // Determine number of stars and spaces based on row position
+      if(row <= size) {
+        // Upper half (including middle)
+        stars = row;
+        spaces = size - row;
+      } else {
+        // Lower half
+        stars = 2 * size - row;
+        spaces = row - size;
       }
-      for(int row=size-1;row>0;row--){
-      for(int space=1;space<=size-row;space++)
-          System.out.print(" ");
-        for(int col=1;col<=row;col++)
-            System.out.print("* ");
-        System.out.println();
+      
+      // Print spaces
+      for(int space = 1; space <= spaces; space++) {
+        System.out.print(" ");
       }
+      
+      // Print stars
+      for(int col = 1; col <= stars; col++) {
+        System.out.print("* ");
+      }
+      
+      System.out.println();
+    }
   }
 }
