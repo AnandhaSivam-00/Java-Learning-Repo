@@ -1,3 +1,5 @@
+// To sort people's names based on their heights in descending order.
+
 import java.util.*;
 
 public class NameSorting {

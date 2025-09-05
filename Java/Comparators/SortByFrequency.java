@@ -1,3 +1,8 @@
+/* To sort a list of strings based on their frequency of occurrence in the descending order.
+*  Input: "apple banana apple orange banana apple"
+*  Output: "apple apple apple banana banana orange"
+*/
+
 import java.util.*;
 
 public class SortByFrequency {
@@ -12,7 +17,7 @@ public class SortByFrequency {
 
     List<Map.Entry<String, Integer>> freqList = new ArrayList<>(freqMap.entrySet());
 
-    Collectors.sort(freqList, (obj1, obj2) -> obj1.getValue() == obj2.getValue() ? obj2.getKey() - obj1.getKey() : obj1.getValue() - obj2.getValue());
+    Collections.sort(freqList, (obj1, obj2) -> obj1.getValue() == obj2.getValue() ? obj2.getKey().compareTo(obj1.getKey()) : obj1.getValue().compareTo(obj2.getValue()));
 
     for(Map.Entry<String, Integer> entry : freqList) {
       for(int i=0; i<entry.getValue(); i++) {
