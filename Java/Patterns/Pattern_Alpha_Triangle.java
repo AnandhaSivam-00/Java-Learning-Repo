@@ -116,12 +116,18 @@ public class Pattern_Alpha_Triangle {
 
     givenStr = givenStr.toUpperCase();
 
-    // nonChangingRow(givenStr);
-    // changingRow(givenStr);
-    // changingRowWithClearWords(givenStr);
-    // nonChangingRowInversion(givenStr);
-    // fullTriangleWithRev(givenStr);
-    // changingRowWithClearWordsRev(givenStr);
+    nonChangingRow(givenStr);
+    System.out.println();
+    changingRow(givenStr); 
+    System.out.println();
+    changingRowWithClearWords(givenStr);
+    System.out.println();
+    nonChangingRowInversion(givenStr);
+    System.out.println();
+    fullTriangleWithRev(givenStr);
+    System.out.println();
+    changingRowWithClearWordsRev(givenStr);
+    System.out.println();
     twoFacedTriangle(givenStr);
   }
 }

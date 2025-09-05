@@ -8,7 +8,7 @@ class Pattern_Half_Triangle {
     int row, col;
 
     for (row = 1; row <= n; row++) {
-      for (col = 1; col <= i; col++) {
+      for (col = 1; col <= row; col++) {
         System.out.print("* ");
       }
       System.out.println();
