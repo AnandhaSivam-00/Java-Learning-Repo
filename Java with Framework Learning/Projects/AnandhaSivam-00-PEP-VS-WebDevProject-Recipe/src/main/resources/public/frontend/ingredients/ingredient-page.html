@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredients - Recipe Management App</title>
+    <link rel="stylesheet" href="ingredient-page.css">
+</head>
+<body>
+
+    <!-- TODO: Create a link back to the recipe page with an id of "back-link" -->
+    <a 
+        href="../recipe/recipe-page.html"
+        target="_blank" 
+        id="back-link"
+    >
+     Back
+    </a>
+
+    <!-- TODO: Create a heading for the page -->
+     <h1>Ingredients</h1>
+
+    <!-- TODO: Create a section to display the list of ingredients -->
+    <!-- - Include an h2 titled "Ingredients" -->
+    <!-- - Include a <ul> with id "ingredient-list" -->
+    <section>
+        <h2>Ingredients</h2>
+        <ul id="ingredient-list"></ul>
+    </section>
+
+    <!-- TODO: Create a section to add a new ingredient -->
+    <!-- - Include an h2 titled "Add an Ingredient" -->
+    <!-- - Include an input field with id "add-ingredient-name-input" -->
+    <!-- - Include a button with id "add-ingredient-submit-button" -->
+    <section>
+        <h2>Add an Ingredient</h2>
+        <input type="text" name="ingredient-name" id="add-ingredient-name-input" placeholder="Ingredient Name" />
+        <button type="button" id="add-ingredient-submit-button">Add</button>
+    </section>
+
+    <!-- TODO: Create a section to delete an ingredient -->
+    <!-- - Include an h2 titled "Delete an Ingredient" -->
+    <!-- - Include an input field with id "delete-ingredient-name-input" -->
+    <!-- - Include a button with id "delete-ingredient-submit-button" -->
+    <section>
+        <h2>Delete an Ingredient</h2>
+        <input type="text" name="ingredient-name" id="delete-ingredient-name-input" placeholder="Ingredient Name" />
+        <button type="button" id="delete-ingredient-submit-button">Delete</button>
+    </section>
+
+    <script src="ingredient-page.js"></script>
+</body>
+</html>

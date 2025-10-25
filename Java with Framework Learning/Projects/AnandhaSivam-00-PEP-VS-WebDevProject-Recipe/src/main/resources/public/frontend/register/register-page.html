@@ -1,0 +1,53 @@
+<!-- 
+ This file contains the structure for the main register page of the Recipe Management Application,
+ providing a user registration form with fields for username, email, and password.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - User Registration Page</title>
+    <link rel="stylesheet" href="register-page.css">
+</head>
+<body>
+
+    <!-- TODO: Add a heading (h1) with text "Register" -->
+
+    <!-- TODO: Add a label or paragraph for "Username" -->
+    <!-- TODO: Add an input element for username with id="username-input" -->
+
+    <!-- TODO: Add a label or paragraph for "Email" -->
+    <!-- TODO: Add an input element for email with id="email-input" and type="email" -->
+
+    <!-- TODO: Add a label or paragraph for "Password" -->
+    <!-- TODO: Add an input element for password with id="password-input" and type="password" -->
+
+    <!-- TODO: Add a label or paragraph for "Repeat Password" -->
+    <!-- TODO: Add an input element for repeat password with id="repeat-password-input" and type="password" -->
+
+    <!-- TODO: Add a register button with id="register-button" and text "Register" -->
+    <section class="register-section">
+        <form method="post" action="/register" class="register-form">
+            <h1>Register</h1>
+
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username-input" />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email-input" />
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password-input" />
+
+            <label for="repeat-password">Repeat Password</label>
+            <input type="password" name="password" id="repeat-password-input" />
+
+            <button type="button" id="register-button">Register</button>
+        </form>
+    </section>
+
+    <script src="register-page.js"></script>
+</body>
+</html>

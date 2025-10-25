@@ -1,0 +1,99 @@
+<!-- 
+ This file contains the structure for the main recipe management page of the Recipe Management Application.
+ It provides interfaces for viewing, adding, updating, deleting, and searching recipes.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Recipe Management App</title>
+    <link rel="stylesheet" href="recipe-page.css">
+</head>
+
+<body>
+
+    <!-- TODO: Add a hidden link with id="admin-link" to navigate to the ingredients page (admin only) -->
+    <a 
+        href="../ingredients/ingredient-page.html" 
+        target="_blank" 
+        id="admin-link"
+        style="display: none;"
+    >
+        Ingredient Page
+    </a>
+
+    <!-- TODO: Add a hidden Logout button with id="logout-button" -->
+    <button 
+        id="logout-button"
+        style="display: none;"
+    >
+        Logout
+    </button>
+
+    <!-- TODO: Add an h1 heading for the Recipe Management section -->
+    <h1>Recipes Management</h1>
+
+    <!-- 🔍 Search a Recipe -->
+    <!-- 
+        TODO: 
+        - Create an h2 with text "Search a Recipe"
+        - Add input with id="search-input"
+        - Add button with id="search-button" and text "Search"
+    -->
+    <h2>Search a Recipe</h2>
+    <input type="text" name="search" id="search-input" />
+    <button id="search-button">Search</button>
+
+    <!-- 📋 Recipe List -->
+    <!-- 
+        TODO: 
+        - Create a <ul> to hold all recipes
+        - Give it id="recipe-list"
+    -->
+    <ul id="recipe-list"></ul>
+
+    <!-- ➕ Add a Recipe -->
+    <!-- 
+        TODO: 
+        - h2 with "Add a Recipe"
+        - Input for recipe name (id="add-recipe-name-input")
+        - Textarea for instructions (id="add-recipe-instructions-input")
+        - Button to submit (id="add-recipe-submit-input") with text "Add Recipe"
+    -->
+    <h2>Add a Recipe</h2>
+    <input type="text" name="add-recipe-name" id="add-recipe-name-input" />
+    <textarea id="add-recipe-instructions-input"></textarea>
+    <button id="add-recipe-submit-input">Add Recipe</button>
+
+
+    <!-- ✏️ Update a Recipe -->
+    <!-- 
+        TODO:
+        - h2 with "Update a Recipe"
+        - Input for recipe name (id="update-recipe-name-input")
+        - Textarea for updated instructions (id="update-recipe-instructions-input")
+        - Button (id="update-recipe-submit-input") with text "Update Recipe"
+    -->
+    <h2>Update a Recipe</h2>
+    <input type="text" name="update-recipe-name" id="update-recipe-name-input" />
+    <textarea id="update-recipe-instructions-input"></textarea>
+    <button id="update-recipe-submit-input">Update Recipe</button>
+
+    <!-- ❌ Delete a Recipe -->
+    <!-- 
+        TODO:
+        - h2 with "Delete a Recipe"
+        - Input with id="delete-recipe-name-input"
+        - Button with id="delete-recipe-submit-input" and text "Delete Recipe"
+    -->
+    <h2>Delete a Recipe</h2>
+    <input type="text" name="delete-recipe-name" id="delete-recipe-name-input" />
+    <button id="delete-recipe-submit-input">Delete Recipe</button>
+
+    <script src="recipe-page.js"></script>
+</body>
+
+</html>
