@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- External styling, the file is in this case located in the resources folder
+        From now on, we will be using separate styling and html files. The css file is linked here    -->
+    <link rel="stylesheet" href="./resources/styling.css">
+    <title>Type Coercion</title>
+</head>
+
+<body>
+
+    <h1>Implicit type coercion, ==, and ===</h1>
+
+    <p>When using the double == operator, is 5 equal to 6?</p>
+    <p id="a1">result</p>
+
+    <p>When using the double == operator, is 5 equal to 5?</p>
+    <p id="a2">result</p>
+
+    <p>When using the double == operator, is 5 equal to "5"?</p>
+    <p id="a3">result</p>
+
+    <p>When using the double == operator, is "5" equal to "5"?</p>
+    <p id="a4">result</p>
+
+    <p>When using the triple === operator, is 5 equal to 6?</p>
+    <p id="a5">result</p>
+
+    <p>When using the triple === operator, is 5 equal to 5?</p>
+    <p id="a6">result</p>
+
+    <p>When using the triple === operator, is 5 equal to "5"?</p>
+    <p id="a7">result</p>
+
+    <p>When using the triple === operator, is "5" equal to "5"?</p>
+    <p id="a8">result</p>
+
+    <h1>Explicit type coercion, String(), Number() and Boolean()</h1>
+
+    <p>If I explicitly coerce 5 to a string, what is "5" + 6?</p>
+    <p id="a9">result</p>
+
+    <p>If I explicitly coerce "5" to a number, what is 5 + 6?</p>
+    <p id="a10">result</p>
+
+    <p>If I explicitly coerce 5 to a boolean, what is 5 + 6?</p>
+    <p id="a11">result</p>
+
+    <p>If I explicitly coerce null to a boolean, what is null + 6?</p>
+    <p id="a12">result</p>
+
+    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion">
+        https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion</a>
+    <br>
+
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness">
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness</a>
+
+    <!--No changes need to be made to this file. check out the attached JS file to complete the exercise.
+        From now on, we will be using separate js and html files. The js file is linked here    -->
+    <script src="TypeCoercion.js"></script>
+    
+</body>
+
+</html>

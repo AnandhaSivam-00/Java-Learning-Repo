@@ -1,0 +1,27 @@
+<div class="section-container">
+
+  <h2>Two-Way Binding</h2>
+
+  <p>You can find the code for this portion in src/app/components/two-way-binding, where you should only be modifying
+    the two-way-binding.component.html file. Two-way binding is the combination of
+    both event and property binding.
+    Generally, you'll only see two-way binding when working with some form of user input that performs live-updates on
+    the
+    site, such as autocomplete features, or changing text in multiple places as the user types in an input box.
+    Here, the variable inputText1 is changed from live event updates from the input box, and the text of the text box
+    is also simultaneously changed via property binding. This is why this is referred to as two-way binding: Property
+    binding and event binding are working simultaneously in tandem.
+  </p>
+
+  <!--this is often referred to as 'banana in a box' syntax-->
+  <input type="text" [(ngModel)]="inputText1">
+  <p>{{inputText1}}</p>
+
+  <div class="todo-container">
+    <p>Now, replicate that behavior for inputText2:</p>
+    
+    <input type="text" [(ngModel)]="inputText2">
+    <p>{{inputText2}}</p>
+  </div>
+
+</div>

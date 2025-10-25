@@ -1,0 +1,26 @@
+<div class="section-container">
+
+  <h2>Property Binding</h2>
+
+  <p>You can find the code for this portion in src/app/components/property-binding, where you should only be modifying
+    the property-binding.component.html file.
+    Property binding will be the process of changing a property of an HTML element, such as an image's src
+    attribute, the URL of a link, or the tooltip provided when the user hovers over text.</p>
+
+  <p>For instance, here the URL of a link is shown to be obtained from the TypeScript file. This gives us the
+    power to dynamically change what site this links to:</p>
+
+  <a [href]="urlLink">link to angular docs</a>
+
+  <div class="todo-container">
+    <p>TODO: Try doing the same thing with this image element. The .TS file within this component contains variable 
+      holding
+      a
+      URL to the Angular logo, named ngLogo, so you can display it on this site by binding it to the [src] attribute via
+      property binding.</p>
+
+    <img [src]="ngLogo">
+    
+  </div>
+
+</div>

@@ -1,0 +1,19 @@
+<div class="section-container">
+
+    <h2>ngIf</h2>
+
+    <p>Check out the component in src/app/components/ng-if to solve this lab.</p>
+    
+    <p>ngIf is like an if statement written in the Component's html template.</p>
+
+    <button (click) = "switchDisplay()">click to switch 'displayed'</button>
+    <p>'displayed' value: {{displayed}}</p>
+    <p *ngIf="displayed">ng-if: If the bound variable 'displayed' is true, the element is displayed</p>
+    
+    <div class="todo-container">
+        <p>TODO: you can also write coditional statements in an ngif. This input box is 2-way bound to the variable 'num'</p>
+        <input type = "number" [(ngModel)]="num">
+        <p id = 'result' *ngIf="num > 0 displayed">This text should only be displayed when 'num' is greater than 0. Current value of 'num': {{num}}</p>
+    </div>
+
+</div>

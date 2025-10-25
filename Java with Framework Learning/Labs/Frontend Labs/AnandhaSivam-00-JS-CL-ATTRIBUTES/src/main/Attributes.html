@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Setting Attributes</title>
+  <!-- external styling, the file is in this case located in the resources folder; linking a CSS
+    file via a link tag allows your styling rules to be applied to this HTML file despite being written in a separate file.   -->
+  <link rel="stylesheet" href="./styling.css">
+</head>
+
+<body>
+
+  <h1>Setting Attributes</h1>
+
+  <p>Recall that elements in the DOM are described in HTML with tags. Tags can have attributes which control various
+    aspects of the element. You can add styling with the "style" attribute, you can add a destination to an anchor
+    (link) tag with the "href" attribute, you can add a reference to an image element with the "src" attribute. In this
+    exercise you will need to display an image by altering an image element's attributes.
+
+  </p>
+
+  <p>TODO: Add the code necessary to the "setImageSrc()" function found in the SettingAttributes.js file in order to
+    display an image. Once complete, you should be able to enter any valid image URL into the text box below, click the
+    button, and see that image rendered in the page.
+  </p>
+
+  <!-- Image element that starts with a placeholder image -->
+  <img id="image" src="./resources/placeholder.png">
+  <br>
+
+  <!-- A very wide input box to accommodate long links -->
+  <input style="min-width:800px" type="text" id="input">
+  <br>
+
+  <!-- This button will call the setImageSrc() function -->
+  <button id="button">Update</button>
+
+  <p>You can use any valid URL of an image for this. There are two packaged with this exercise:</p>
+  <ul>
+    <li>./resources/python.png</li>
+    <li>./resources/java.png</li>
+  </ul>
+
+  <!-- TODO: check out the linked JS file to complete the lab; linking a JavaScript file via a script tag allows your JS
+  functionality to trigger in this HTML file despite being written in a separate file. -->
+  <script src="script.js"></script>
+
+
+  <!-- OPTIONAL PRACTICE: If you want more practice later, try adding some text in a p tag and a button tag.
+    Then try creating functionality for that button to turn the text orange by changing the class attribute
+    to "orange-text". Notice that in the styling.css file there is already a CSS rule for a class named "orange-text".-->
+</body>
+
+</html>

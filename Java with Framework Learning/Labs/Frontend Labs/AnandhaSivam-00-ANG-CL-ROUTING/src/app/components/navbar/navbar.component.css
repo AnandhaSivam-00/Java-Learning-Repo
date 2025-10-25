@@ -1,0 +1,10 @@
+a {
+  padding-right: 40px;
+}
+/* You can add global styles to this file, and also import other style files */
+/*
+Universal selector: select all elements, apply styling rules to them (set the font of the whole page to Monaco)
+ */
+* {
+  font-family: Monaco, monospace;
+}

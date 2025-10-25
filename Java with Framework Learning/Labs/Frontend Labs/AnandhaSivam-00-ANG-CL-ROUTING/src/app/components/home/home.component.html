@@ -1,0 +1,32 @@
+<div class="section-container">
+
+  <h1>Routing</h1>
+
+  <p>Angular is regularly referred to as an SPA, or single-page-application. That means that when you use a site
+    built off of an SPA, you never actually navigate to a new webpage when you navigate within the site. Rather, the
+    entire
+    view is replaced by new DOM elements, which ends up with a much quicker user experience.</p>
+
+  <p>Angular provides Routing, which is a way for an SPA to mimick page navigation. When a use clicks on a link on the
+    page,
+    the "route" changes, and the entire view of the page changes. New routes should be set up in a specific file -
+    app.routing.module.ts - under src/app. You can see there that several routes - to the "home" page, the "feed", the
+    "search" page have already been provided. </p>
+
+  <div class="todo-container">
+    <p>Your task will be to add a new route to the "profile" page, and also
+      to link to the "profile" page in the navbar component.These files will be of interest to you:</p>
+    <ul>
+      <li>src/app/app.routing.module.ts</li>
+      <li>src/app/components/navbar.html</li>
+    </ul>
+  </div>
+
+  <p>It's worth noting that Angular components are all loaded on startup - this is referred to as "eager loading".
+    That means that the wait time for the user to load the site when they first enter is significantly higher, but that
+    their
+    continued use of the site is quick. This is both a benefit and a drawback. It's also possible to force your
+    components
+    to "lazy load" - or load only when they are first used.</p>
+
+</div>

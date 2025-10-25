@@ -1,0 +1,42 @@
+<div class="section-container">
+
+  <h1>Lifecycle of a component</h1>
+
+  <p>You may have noticed that the .ts file of every component has contained a method 'ngoninit'. This is a very useful
+    method that will be used extensively in Angular components.</p>
+
+  <p> Components get created, modified, and destroyed quite often, and it is often necessary to perform actions when these
+    things
+    happen. For instance, if a user on a social media site opens up a chat with their friend, we intend to load all
+    previous chat messages when the chat box is first rendered. Or, the site persists user input when the user closes a
+    text field as an autosave feature. To accomplish this, the developer needs to write code that will be executed
+    whenever these events happen. We refer to this as the lifecycle of a component, and Angular provides specific
+    methods
+    that fire when these lifecycle events happen. They are referred to as lifecycle hooks.</p>
+
+  <h2>ngOnInit</h2>
+
+  
+  <div class="todo-container">
+    <p>Provided within this component is the method 'ngOnInit'. Your task is going to be to update the CurrentTime
+      variable with the current time when the component is first mounted. The easiest way to get the current time
+      will be in milliseconds with dateTimestampProvider.now(), which is fine.</p>
+
+    <h3>Current tme: {{time}}</h3>
+    <p>This component is mounted when the page first loads, so you can just refresh the page to refresh the time.</p>
+  </div>
+
+  <h2>ngOnDestroy</h2>
+  <div class="todo-container">
+    <p>Then, your next task is going to be to write the behavior of 'ngOnDestroy'. ngOnDestroy will execute after a
+      component is unmounted. This method should produce an alert such as 'Component Destroyed!' you can test this by
+      clicking the buttons on the site, which are connected to a boolean value and an ngif which will unmount and mount
+      the
+      component.</p>
+  </div>
+
+  <h2>ngOnChanges</h2>
+  <p>You should also know about ngOnChange, which fires every time the component is updated, and when the component
+    first mounts.</p>
+
+</div>

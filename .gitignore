@@ -6,6 +6,8 @@ cleanup.sh
 history_log.txt
 application.properties
 Extensions
+Extensions-Angular
+node_modules
 env.json
 target/
 h2/

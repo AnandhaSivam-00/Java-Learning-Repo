@@ -1,0 +1,28 @@
+<h1>Observables</h1>
+
+<p>Now that we have many different components & other files operating on the same data, we need to introduce more
+  advanced forms of handling asynchronous operations. You can think of an Observable as a more advanced form of a
+  Promise. Where a promise has a single agent in your code waiting for the resolution of some asynchronous data, an
+  Observable can have multiple agents acting as 'subscribers' to data, and can also handle multiple 'publishers' to
+  that data. This is generally referred to as the pub/sub model.</p>
+
+  <p>Every agent receiving data needs to 'subscribe' to it. The developer needs to define exactly what happens when the
+    subscriber receives an update from the Observable using the .subscribe method. We'll be using observables primarily
+    for receiving HTTP responses, so only a single subscriber and a single update would be expected, but even then,
+    consider that something like video streaming would involve a stream received via HTTP that is constantly updating.
+  </p>
+
+  <p>Check out the 'Display' component for an example subscribing to an observable it receives from
+    'CounterService' to count in seconds. The CounterService also provides an observable that counts in
+    milliseconds, and your task will be to display its results in this component by subscribing to it. Check out
+    the .ts file of the display component.</p>
+
+
+<p>counting 1-10 per second: {{seconds}}</p>
+
+<div class="todo-container">
+
+  <p>TODO: counting 1-1000 per millisecond: {{milliseconds}}</p>
+  <p>the milliseconds counter will run a bit slow due to the high amount of renders/computations.</p>
+  
+</div>

@@ -1,0 +1,40 @@
+<div class="section-container">
+
+  <h2>Parent to Child</h2>
+
+  <p>A parent component can use property binding to bind data to a child component, as demonstrated here.</p>
+
+  <p>In this case, dataFromParent is a variable belonging to the child component "input", and "var1", "var2" are
+    variables
+    belonging to this (parent) component. Notice this looks a bit like property binding. Your next task is going to be
+    to
+    pass another variable, "todoVar", into the child component's "todoInput" variable so that it can be displayed.
+    this will require you to bind "todoVar" in the parent component's HTML template and to add the @Input() decorator
+    over
+    the child component's "todoInput" variable.</p>
+
+  <p>Update the first child component from the parent:</p>
+  <input type="text" [(ngModel)]="var1">
+  
+  <p>Update the second child component from the parent:</p>
+  <input type="text" [(ngModel)]="var2">
+
+  <div class="todo-container">
+    <p>TODO: Update both child components to take in todoData from the parent:</p>
+    <input type="text" [(ngModel)]="todoData">
+
+    <app-child [dataFromParent]="var1" [todoData]="todoData"></app-child>
+    <app-child [dataFromParent]="var2" [todoData]="todoData"></app-child>
+  </div>
+
+</div>
+
+<div class="section-container">
+
+  <h2>Child to Parent</h2>
+  <p>If you recall the @Output annotation used in EventEmitters, it may also be used to send data from a child component
+    to the parent. An event emitted by the EventEmitter can have some data attached to it, which can then be received by
+    the parent component's handler for the custom event. Essentially,
+    data can be passed from child to parent using event binding and passing data via an event.</p>
+
+</div>

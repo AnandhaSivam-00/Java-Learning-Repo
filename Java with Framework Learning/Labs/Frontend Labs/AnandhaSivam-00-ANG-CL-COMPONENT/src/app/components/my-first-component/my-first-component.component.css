@@ -1,0 +1,11 @@
+/*
+This is the CSS styling file for an individual component.
+ */
+/*
+Element selector: select all elements of a certain type, apply styling rules to them (keep images from being too big
+for your screen)
+ */
+img {
+  max-width:20%;
+  height:auto;
+}

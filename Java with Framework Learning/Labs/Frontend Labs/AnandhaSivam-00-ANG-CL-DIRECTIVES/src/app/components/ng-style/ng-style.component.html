@@ -1,0 +1,17 @@
+<div class="section-container">
+
+    <h2>ngStyle</h2>
+
+    <p>Check out the component in src/app/components/ng-style to solve this lab. ngStyle allows the developer to
+        programmatically change the styling of a specific component. For instance, the style of this element was bound
+        to
+        a TypeScript variable. The style rules are written as key-value pairs in TypeScript.</p>
+
+    <p [ngStyle]="{'font-size': fontSize}">I'm text</p>
+    <button (click)="increaseFontSize()">increase font size</button>
+
+    <div class="todo-container">
+        <p [ngStyle]="{'font-size': fontSize}">TODO: Apply the same ngStyle rule to me</p>
+    </div>
+
+</div>

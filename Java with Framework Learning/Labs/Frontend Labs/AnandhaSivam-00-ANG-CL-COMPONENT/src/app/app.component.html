@@ -1,0 +1,38 @@
+<!-- this is the app.component.html file, which is the 'root' of the Angular project. -->
+<h1>Welcome to Angular</h1>
+
+<p>Angular is a powerful framework that allows the developer to modularize their websites by creating
+'components' - these are custom combinations of html, css, typescript, and testing files that represent
+a reusable portion of the site. You can think of a component as being similar to a Class in an OOP language -
+in fact, Components in Angular are technically classes written in Typescript.</p>
+
+<p>A Component in Angular looks a bit like a custom HTML tag. One such component has already been written
+inside of this project, and we'll be adding it to the page now. If you're viewing this text from your browser, then
+  navigate to the file src/app/app.component.html and add the component described in the comments.</p>
+
+<!-- TODO: add the line below to the HTML code:
+    <app-my-first-component></app-my-first-component>
+    If you're still not convinced of the power of components, try adding it multiple times.-->
+<div class="todo-container">
+        
+  <p>TODO: add the line below to the HTML code: {{template}}. If you're still not convinced of the power of components, try adding it multiple times.</p>
+
+
+    <!-- SYNTAX GOES HERE -->
+  {{ template }}
+</div>
+
+
+<p>tip: Angular features live-reloading, so when you modify and then save a file (ctrl+s if you don't have
+  autosave on) the page will be reloaded in the browser. </p>
+
+<p>The actual component code is located in
+src/app/components/my-first-component, and new components could be created using the command
+  "ng generate component (component-name)" in the terminal</p>
+
+<div>
+  <a href = "https://angular.io/guide/component-overview">https://angular.io/guide/component-overview</a>
+</div>
+
+<app-my-first-component></app-my-first-component>
+

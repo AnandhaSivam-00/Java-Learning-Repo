@@ -1,0 +1,25 @@
+<div class="section-container">
+
+  <h2>ngFor</h2>
+
+  <p>Check out the component in src/app/components/ng-for to complete this lab.
+    ngFor is like a for loop for HTML elements. It will generate an element for every item in an array.
+    You should define what to call an individual element, and provide the name of the array variable, in this case
+    we are going to iterate through every 'number' from the 'numbers' array.</p>
+
+  <div *ngFor="let number of numbers">
+    <p>number: {{number}}</p>
+  </div>
+
+  <div class="todo-container">
+
+    <p>TODO: use ngFor to display all the names in the 'names' array.</p>
+
+    <!-- Do NOT remove the class from the following div element. -->
+    <div *ngFor="let name of names" class = 'result'>
+      <p>name: {{ name }}</p>
+    </div>
+    
+  </div>
+
+</div>

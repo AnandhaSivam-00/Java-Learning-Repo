@@ -1,0 +1,17 @@
+<div class="section-container">
+
+  <h1>Space Articles</h1>
+
+  <div *ngFor="let article of articles">
+
+    <a [href]="article.url">{{article.title}}</a>
+    <span> - {{article.publishedAt}}</span>
+
+    <br>
+
+    <img [src]="article.imageUrl">
+    <span>{{article.summary}}</span>
+
+  </div>
+
+</div>

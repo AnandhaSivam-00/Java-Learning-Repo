@@ -1,0 +1,8 @@
+<!--this component is only used to mount & unmount the lifecycle component, where you will be writing code
+no need to change anything-->
+<p>Click this button to mount/unmount the component</p>
+<button (click) = "swapMount()">button</button>
+
+<div *ngIf="mounted">
+  <app-lifecycle></app-lifecycle>
+</div>

@@ -1,0 +1,20 @@
+<p>After our components have been separated, there will come times when events need to be passed from
+    component to component. To do this, we will need to define custom events within Angular using the EventEmitter. The
+    HTML template for the button-menu component will contain two buttons, both of which have click events bound to
+    handler methods. The TS file, however, has an EventEmitter object attached to the @Output decorator: this allows
+    the component to 'emit' an event to the parent component. this is done in the increment() method.</p>
+
+    
+<div class="todo-container">
+    <p>You can see that in the display component, incrementEvent is a custom event bound to the display method's own
+    handler. Your task is to fill out the functionality needed for a working decrement button - that will entail
+    creating
+    an EventEmitter in the button-menu component, emitting the event in the decrement() method of button-menu, and
+    binding
+    the custom event to the doDecrement() method of the display component in its HTML tempalte.</p>
+
+    <p>Count: {{num}}</p>
+    <!--TODO: after setting up the EventEmitter in the button-menu component, bind the new event to this component.-->
+    <app-button-menu (incrementEvent)="doIncrement()" (decrementEvent)="doDecrement()"></app-button-menu>
+
+</div>

@@ -1,0 +1,22 @@
+<div class="section-container">
+
+  <h1>Report search</h1>
+
+  <div class="todo-container">
+
+    <p>Input the id of some report and press 'search' to obtain info about that report</p>
+    <input [(ngModel)]="input">
+    <button (click)="loadReport()">search</button>
+
+    <br>
+
+    <a [href]="report.url">{{report.title}}</a>
+    <span> - {{report.publishedAt}}</span>
+
+    <br>
+
+    <img [src]="report.imageUrl">
+    <span>{{report.summary}}</span>
+
+  </div>
+</div>

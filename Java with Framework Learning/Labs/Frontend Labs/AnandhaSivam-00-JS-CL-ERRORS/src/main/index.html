@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errors in JavaScript</title>
+    <style>
+        * {
+        font-family: Monaco, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Errors in JavaScript</h1>
+    <p>Even though JavaScript tends to be much more loose with errors compared to other languages due to its loose typing 
+        feature, there are still cases where errors must be thrown - such as a issue with HTTP (such as a timeout or a CORS
+        issue), or, in this case, calling a non-existent function.
+
+        When the button below is clicked, you should use Javascript's error handling to cause an alert on the page.
+    </p>
+    <button id = "errorButton">This button will trigger an error.</button>
+    <br>
+    <button id = "noErrorButton">This button will not trigger an error.</button>
+    <p id = "monitor"></p>
+    <script src = "Lab.js"></script>
+</body>
+</html>

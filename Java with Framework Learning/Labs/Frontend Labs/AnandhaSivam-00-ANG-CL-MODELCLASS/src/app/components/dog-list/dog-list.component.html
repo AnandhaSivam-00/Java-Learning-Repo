@@ -1,0 +1,34 @@
+<h1>Models</h1>
+
+<p>This lab uses an interface to create a model of a dog. It is accepted and common to use interfaces to model data
+  in Angular in the same way you would use model classes in other languages. An interface named 'dog' is provided, which
+  contains name, breed, and age fields. This lab will require you to do is to fill in the addDog method, which takes
+  in data from the 2-way bound input fields on this page, creates a Dog model based off of the Dog interface, and
+  saves that to a service that acts as a site-wide global store of dogs (already provided.) The list of dogs will
+  refresh
+  since it is assigned to the dogs array from the DogsService.</p>
+
+<div class="todo-container">
+
+  <h2>Dog input</h2>
+
+  <p>name</p>
+  <input type="text" [(ngModel)]="nameInput">
+
+  <p>breed</p>
+  <input type="text" [(ngModel)]="breedInput">
+  
+  <p>age</p>
+  <input type="number" [(ngModel)]="ageInput">
+
+  <br>
+
+  <button (click)="addDog()">submit dog</button>
+
+  <h2>All dogs</h2>
+
+  <div *ngFor="let dog of dogs">
+    <p>dog name: {{dog.name}}, breed: {{dog.breed}}, age: {{dog.age}}</p>
+  </div>
+
+</div>

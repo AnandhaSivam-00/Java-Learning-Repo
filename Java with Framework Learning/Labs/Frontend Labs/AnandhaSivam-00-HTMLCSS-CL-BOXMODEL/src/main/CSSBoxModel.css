@@ -1,0 +1,57 @@
+/* TODO: Read the descriptions of the CSS Box Model and open the CSSBoxModel.html
+in your browser to see the existing styling.  Read the CSS styling for the #box-model
+as a demonstration and complete the styling for the .pizza class and individual pizza elements */
+
+#box-model {
+    /* Content represents the text and background color of the text.  In this
+    case the content is "CSS Box Model" */
+    color: darkblue;
+    background-color: lightblue;
+
+    /* Padding represents the space between the content and border */
+    padding: 10px;
+
+    /* Borders can serve as visual markers to distinguish an element from its surroundings or other elements.
+    Unlike padding, borders are visible and can be styled with various colors, widths, and styles
+    (e.g., solid, dashed, dotted, double, groove, etc.). */
+    border: 3px dotted purple;
+
+    /* Margin is the space outside of the border that separates an element from other elements. */
+    margin: 20px;
+}
+
+.pizza {
+    padding: 20px; /* Padding is the space between the content and border */
+    border: 10px solid saddlebrown; /* Crust (border) */
+
+    /* TODO: Make the margin 20px - Margin represents the space between each pizza (element) */
+    margin: 20px;
+
+    width: 100px; /* Width of the content area */
+    text-align: center; /* Centers the text */
+}
+
+#pizza1 {
+    color: orange; /* The content color is orange - this is the word "Four Cheese" */
+
+    /* TODO: Make the background-color yellow. This is the background of the content. */
+    background-color: yellow;
+}
+
+#pizza2 {
+
+    /* TODO: Make the content color red - this is the word "Pepperoni" */
+    color: red;
+    background-color: wheat;
+
+    /* TODO: Make the border 5px solid saddlebrown - this represents a thin crust */
+    border: 5px solid saddlebrown;
+}
+
+#pizza3 {
+
+    /* TODO: You burnt the Veggie Pizza! Make the border black solid 10px - this represents the crust. */
+    color: darkgreen;
+    background-color: lightgreen;
+    border: 10px solid black;
+}

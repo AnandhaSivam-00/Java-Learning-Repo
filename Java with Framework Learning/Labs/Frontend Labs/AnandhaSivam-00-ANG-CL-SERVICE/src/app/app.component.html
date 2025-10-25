@@ -1,0 +1,24 @@
+<h1>Services</h1>
+
+<p>Services, like a Service class in your backend, contain logic which is essential to the operation of the site.
+  Specifically, Angular Services allow the developer to separate logic that shouldn't logically be part of an individual
+  component. For instance, they can be quite useful as a place to store methods that sends HTTP requests to your
+  backend,
+  and they are also a quite useful place to store and manipulate global, site-wide variables (think keeping track of a
+  shopping cart, or keeping track of the currently logged in user).</p>
+
+<p>In this case, a service "CountService" will contain a globally-stored number variable, which is incremented from the
+  Incrementer component. Check out how the Service is introduced in the Incrementer component - it is injected into the
+  component, in the component's constructor method, via a strategy called dependency injection. That means that when a
+  Service is requested to be injected, Angular will instantiate it for the developer and make it usable within the
+  component. One of the advantages here is that Services follow the Singleton design pattern, where Angular injects the
+  same instance of the service into all components, so the "count" field of the service is able to act as if it's a
+  global store shared across the application.</p>
+
+  <app-menu></app-menu>
+
+<div>
+
+  <a href="https://angular.io/guide/architecture-services">https://angular.io/guide/architecture-services</a>
+
+</div>

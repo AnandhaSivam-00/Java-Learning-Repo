@@ -1,0 +1,25 @@
+<div class="section-container">
+
+
+  <h1>Space Reports</h1>
+
+  <div class="todo-container">
+
+    <div *ngIf="reports.length===0">
+        <p>TODO: Update space-api.service.ts so that the reports will be returned and rendered here.</p>
+    </div>
+
+    <div *ngFor="let report of reports">
+
+      <a [href]="report.url">{{report.title}}</a>
+      <span> - {{report.publishedAt}}</span>
+
+      <br>
+
+      <img [src]="report.imageUrl">
+      <span>{{report.summary}}</span>
+
+    </div>
+  </div>
+
+</div>

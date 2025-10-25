@@ -1,0 +1,23 @@
+<div class="section-container">
+
+  <h2>Event Binding</h2>
+
+<p>You can find the code for this portion in src/app/components/event-binding, where you should only be modifying
+  the event-binding.component.html and event-binding.component.ts files.
+  In the component's HTML code, the binding (click)="processClickButton1() has been added to the button 1 element.
+  That means that when the (click) event fires, the processClickButton1 method in the Component's TypeScript file
+  will run. In this case, property binding is later used to helpfully inform the user that the button has been clicked.
+</p>
+
+<button (click)="processClickButton1()">button 1</button>
+<p>{{button1ClickedMessage}}</p>
+
+<div class="todo-container">
+  <p>TODO: replicate the functionality by introducing event binding to button 2, as well as writing a method within
+    the component .ts file to process the clicking of button 2.</p>
+
+  <button (click)="processClickButton2();">button 2</button>
+  <p>{{button2ClickedMessage}}</p>
+</div>
+
+</div>

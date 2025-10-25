@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+  padding:  1%;
+  /* text-align: center; */
+}
+
+.section-container {
+	border: 2px solid black;
+	padding: 1%;
+	margin: 1%;
+}
+
+.todo-container {
+	border: 2px solid orange;
+	padding: 1%;
+	margin: 1%;
+}
+
+input {
+	margin: 0.5%;
+}
+
+button{
+    margin: 0.75%;
+}

@@ -1,0 +1,17 @@
+<div class="todo-container">
+
+    <p>Your task will be to implement a decrementing functionality in the Service, as well as injecting it into the
+        Decrementor component and properly calling the Service's decrementing function when the decrement button is
+        clicked.
+        This lab relies on EventEmitters, but the EventEmitters and event binding necessary have already been written.
+        You
+        only need to do the steps mentioned. The .ts files of the decrementor and incrementor, as well as the .ts file
+        of the
+        CountService in the services folder, will be of interest to you.
+    <p>
+
+    <h2>current number: {{num}}</h2>
+    <app-incrementor (incrementEvent)=updateNumFromService()></app-incrementor>
+    <app-decrementor (decrementEvent)=updateNumFromService()></app-decrementor>
+
+</div>

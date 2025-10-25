@@ -1,0 +1,21 @@
+<div class="section-container">
+
+  <h2>ngClass</h2>
+
+  <p>Check out the component in src/app/components/ng-class to complete this lab.
+
+    ngClass allows you to programmatically determine the class, or classes of a component. This allows Angular
+    to change the set of styling rules that are applied to a particular component. In this case, clicking this button
+    will change the class of this p component, swapping its color. You can find the component's styling rules in the
+    component's CSS file.</p>
+
+  <p [ngClass]="componentClass">I'm changing colors!</p>
+  <button (click)=switchComponentClass()>click to change component classes</button>
+
+  <div class="todo-container">
+    <p [ngClass]="componentClass">TODO: apply the ngClass attribute directive to the following p tag as well, binding the ngClass directive to
+      componentClass.</p>
+    <p [ngClass]="componentClass">I want to change colors too!</p>
+  </div>
+
+</div>
